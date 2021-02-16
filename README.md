@@ -11,3 +11,6 @@ Previously, I have learned about web development in my University. However, duri
 
 1. Learned some new HTML elements and attributes.
 2. Learned that `creating a basic HTML template before giving any styling` is easier than `creating HTML and giving styling at the same time`.
+
+## Module 4-5 (Styling)
+On this part of the course, I learned ...
