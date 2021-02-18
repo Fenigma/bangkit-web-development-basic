@@ -15,7 +15,7 @@ div + p {
 
 (selector == +)       --> the p that comes directly after div will be colored green.
 (selector == ~)       --> all p that comes after div will be colored green.
-(selector == >)       --> the p which is a directly inside a div will be colored green.
+(selector == >)       --> the p which is directly inside a div will be colored green.
 (selector == {space}) --> all p which is inside a div will be colored green (even if not direct child of div -> ex: <div><section><p>).
 ```
 4. Learned about **pseudo-selector** which is divided into **`Pseudo Selector`** (Example: `:hover`, `:link`, `:visited`, `:active`) and **`Pseudo-element Selector`** (example: `::before`, `::after`, `::first-letter`). For more info, check this [resource](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements).
@@ -63,9 +63,9 @@ Example using @font-face
 p {font-family: 'myfont';}
 ```
 7. Learned about **`box element of CSS`**. Since it has lots of topic, it is better to look at [source](https://www.dicoding.com/academies/123/tutorials/5814).
-8. Learned shortcut in using border. Example: `div {border: width style color;}`. Alsp learned that we can specify shortcut for `border-width` like following: `order-width: 1px 2px 3px 4px; /*top right bottom left*/`
-9. Learned how to center the position of a content. It can be done by using: `.center { margin: 0 auto; }`
-10. Learned about **display**. Here, I learned the difference between block and inline. [source](https://www.dicoding.com/academies/123/tutorials/5843?from=5838)
+8. Learned shortcut in using **border**. Example: `div {border: width style color;}`. Alsp learned that we can specify shortcut for `border-width` like following: `order-width: 1px 2px 3px 4px; /*top right bottom left*/`
+9. Learned how to **center the position of a content**. It can be done by using: `.center { margin: 0 auto; }`
+10. Learned about **display**. Here, I learned the difference between `p { display: block;}` and `p { display: inline;}`. [source](https://www.dicoding.com/academies/123/tutorials/5843?from=5838)
 11. Learned about **positioning**. There are many positionings available: `Normal Flow / Static Flow`, `relative`, `absolute`, `fixed`. Read [here](https://www.dicoding.com/academies/123/tutorials/5909?from=6153).
 ```
 Normal Flow / Static Flow : The default behaviour. Every block element is rendered in a new line even when there is spare spaces beside it horizontally.
@@ -78,8 +78,8 @@ Fixed Positioning : Same like absolute positioning but only relative to browser 
 
 Sticky Positioning : Same like Fixed positioning but other elements are aware of its existance (like Fixed but based on relative, not absolute).
 ```
-12. Learned about float. Float is easy but have some problematic result when implemented, we might need to use `clear property` (have 3 value: right, left, both) or `overflow:auto`. See [here](https://www.dicoding.com/academies/123/tutorials/5906).
-13. Learned that we need to adjust the **viewport** so that the rendered HTML can be shown responsively on smaller devices.
+12. Learned about **float**  property. Float is easy but have some problematic result when implemented, we might need to use `clear property` (have 3 value: right, left, both) or `overflow:auto`. See [here](https://www.dicoding.com/academies/123/tutorials/5906).
+13. Learned that we need to adjust the **viewport** so that the rendered HTML can be shown responsively on smaller devices. Also see number 14 since adjusting only viewport is not enough.
 ```
     <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
@@ -99,4 +99,39 @@ Example:
     }
 }
 ```
-15. 
+15. Learned to create **sticky navigation**. Here, I learned to create a navbar that is sticky when scrolled. TO make this, we can use combination of `position: sticky` on the `<nav>` and making the wrapper of `<nav>` have `display: inline`.
+```
+index.html
+==========
+<header>
+    <div class="jumbotron">
+        <h1>Bandung</h1>
+        <p lang="id" translate="no">Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#geografis">Geografis</a></li>
+            <li><a href="#wisata">Wisata</a></li>
+        </ul>
+    </nav>
+</header>
+
+style.css
+=========
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+nav {
+   position: sticky;
+   top: 0;
+}
+
+header {
+   display: inline;
+}
+```
