@@ -4,10 +4,9 @@ This repository is used for **Bangkit Program** labeled with Online Learning #01
 # About
 The code in this repository is used to track personal learning progress on web development. The course that this repository based on is hosted on dicoding.com on this [link](https://www.dicoding.com/academies/123). 
 
+# Project Description
+Module 1-5 is about creating a simple blog-like website. Here, the course will explain the basics of HTML and CSS. In this repository, module 1-5 is divided into 2 branches `module-1-3` that focus on HTML and `module-4-5-styling` that focus on CSS. Later, on module 6-7, the course will teach about Javascript in a completely different project (instead of blog-like website, it will be a calculator).
+
 # Lesson Learned
-
 ## Module 1-3 (Basic of HTML)
-Previously, I have learned about web development in my University. However, during this course (module 1-3), I learned new things about HTML that I didn't know before. Some new things that I learned during this course on module 1-3 are:
-
-1. Learned some new HTML elements and attributes.
-2. Learned that `creating a basic HTML template before giving any styling` is easier than `creating HTML and giving styling at the same time`.
+Lesson learned can be seen on this [source](learning_notes/module_1_3.md)
