@@ -45,5 +45,3 @@ Used to store temporary data on browser that will **NOT** be gone when the tab/b
 ```
 The example is same as sessionStorage, but change sessionStorage to localStorage.
 ```
-
-3. 
